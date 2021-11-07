@@ -1,0 +1,858 @@
+@import '../styles/fonts.css';
+body {
+  margin: 0;
+}
+
+.first {
+  width: 100%;
+  height: 700px;
+  padding-left: 250px;
+  padding-right: 250px;
+  background-image: url(../imgs/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first-header {
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.first-header__logo {
+  font-family: "bold";
+  color: white;
+  font-size: 20px;
+}
+.first-header__btn {
+  margin-right: 40px;
+}
+
+.btn__logIn, .btn__signUp {
+  border: none;
+  background: none;
+  font-family: "light";
+  color: white;
+  font-size: 13px;
+}
+
+.btn__signUp {
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 90px;
+  height: 36px;
+  margin-left: 13px;
+}
+
+.first-main {
+  width: 470px;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 94px;
+}
+.first-main__header {
+  color: white;
+  font-family: "bold";
+  font-size: 46px;
+  margin-bottom: 23px;
+  letter-spacing: 4px;
+}
+.first-main__text {
+  color: white;
+  font-family: "light";
+  font-size: 20px;
+}
+.first-main__find-btn {
+  color: white;
+  font-family: "light";
+  font-size: 14px;
+  background-color: #FF4E50;
+  width: 225px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 28px;
+}
+
+.second {
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-top: 87px;
+}
+.second__header {
+  font-family: "bold";
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.second__content {
+  display: flex;
+}
+
+.content-block {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  position: relative;
+}
+
+.content-block-container {
+  position: absolute;
+  bottom: 20px;
+}
+.content-block-container__btn {
+  color: white;
+  background-color: #ff4e50b0;
+  letter-spacing: 2px;
+  font-size: 9px;
+  font-family: "light";
+  border: none;
+  border-radius: 15px;
+  height: 20px;
+  width: 70px;
+}
+.content-block-container__header {
+  color: white;
+  font-family: "bold";
+  font-size: 25px;
+  margin-top: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.content-block-container__text {
+  color: white;
+  font-family: "light";
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 14px;
+}
+
+.content-blockOne {
+  background-image: url(../imgs/Step1image.png);
+  margin-right: 20px;
+}
+
+.content-blockTwo {
+  background-image: url(../imgs/Step2image.png);
+  margin-right: 20px;
+}
+
+.content-blockThree {
+  background-image: url(../imgs/Step3image.png);
+}
+
+.third {
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-top: 87px;
+}
+.third__header {
+  font-family: "bold";
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.third__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.third__btn {
+  display: flex;
+  justify-content: center;
+}
+.third__btn .btn {
+  width: 180px;
+  height: 40px;
+  color: #FF4E50;
+  background-color: white;
+  border: 1px solid #FF4E50;
+  border-radius: 20px;
+  font-family: "bold";
+  font-size: 14px;
+}
+
+.third-content__block {
+  width: 225px;
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.third-content__block__container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.third-content__block__containerOne {
+  background-image: url(../imgs/Bitmap1.png);
+}
+.third-content__block__containerTwo {
+  background-image: url(../imgs/Bitmap2.png);
+}
+.third-content__block__containerThree {
+  background-image: url(../imgs/Bitmap3.png);
+}
+.third-content__block__containerFour {
+  background-image: url(../imgs/Bitmap4.png);
+}
+.third-content__block__text {
+  text-align: center;
+}
+.third-content__block__text .third-name {
+  font-family: "bold";
+  font-size: 14px;
+  margin-bottom: 19px;
+}
+.third-content__block__text .third-about {
+  font-family: "light";
+  font-size: 13px;
+  line-height: 14px;
+}
+
+.division {
+  display: flex;
+}
+
+.container-mini {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.container-miniOne {
+  background-color: #FF4E55;
+}
+
+.container-miniTwo {
+  background-color: #19D4CA;
+}
+
+.container-miniThree {
+  background-color: #FFA710;
+}
+
+.container-miniFour {
+  background-color: #667DF3;
+}
+
+.fourth {
+  padding-left: 230px;
+  padding-right: 230px;
+  margin-top: 87px;
+}
+.fourth__header {
+  font-family: "bold";
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.fourth-container__block {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.fourth-container__block .fourth-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  color: white;
+  font-family: "bold";
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fourth-container__block .fourth-imgOne {
+  width: 300px;
+  height: 310px;
+  background-image: url(../imgs/Sport1.png);
+}
+.fourth-container__block .fourth-imgTwo {
+  width: 300px;
+  height: 310px;
+  background-image: url(../imgs/Healath1.png);
+}
+.fourth-container__block .fourth-imgThree {
+  width: 300px;
+  height: 310px;
+  background-image: url(../imgs/Extreme1.png);
+}
+.fourth-container__block .fourth-imgFour {
+  width: 300px;
+  height: 310px;
+  background-image: url(../imgs/Games1.png);
+}
+.fourth-container__block .fourth-imgFive {
+  width: 620px;
+  height: 310px;
+  background-image: url(../imgs/Culture1.png);
+}
+.fourth-container__block .fourth-imgSix {
+  width: 620px;
+  height: 310px;
+  background-image: url(../imgs/CultureCopy1.png);
+}
+.fourth-container__block .fourth-imgSeven {
+  width: 300px;
+  height: 310px;
+  background-image: url(../imgs/GamesCopy1.png);
+}
+
+.fifts {
+  padding-left: 230px;
+  padding-right: 230px;
+  margin-top: 87px;
+}
+.fifts__header {
+  font-family: "bold";
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.fifts__text {
+  font-family: "light";
+  font-size: 18px;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.fifts__form {
+  display: flex;
+  justify-content: center;
+}
+.fifts__form .fifts-inpt {
+  width: 299px;
+  height: 40px;
+  border: 1px solid #D4D4D4;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+.fifts__form .fifts-btn {
+  width: 172px;
+  height: 40px;
+  color: white;
+  background-color: #FF4E50;
+  border: none;
+  border-radius: 20px;
+  font-family: "bold";
+  font-size: 14px;
+  margin-bottom: 80px;
+}
+
+hr {
+  border: 1px solid #FF4E50;
+  margin-bottom: 38px;
+}
+
+.footer {
+  padding-left: 176px;
+  padding-right: 191px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__header {
+  font-family: "light";
+  font-size: 16px;
+  color: #FF4E50;
+}
+.footer__company .company-header {
+  font-family: "bold";
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.footer__company .company-first .company-element {
+  color: #999999;
+  font-family: "light";
+  font-size: 14px;
+  margin-top: 5px;
+}
+.footer__company .company-second .company-element {
+  color: #999999;
+  font-family: "light";
+  font-size: 14px;
+  margin-top: 5px;
+}
+.footer__partners .partners-header {
+  font-family: "bold";
+  font-size: 14px;
+}
+.footer__logo .logo-header {
+  color: #CCCCCC;
+  font-size: 10px;
+  font-family: "bold";
+  text-align: end;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+
+  .first {
+    width: 100%;
+    height: 700px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-position: 50% 0;
+  }
+
+  .second {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .second__header {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+  .second__content {
+    justify-content: center;
+  }
+
+  .content-block {
+    width: 236px;
+    height: 400px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .content-block-container__btn {
+    font-size: 9px;
+    height: 20px;
+    width: 70px;
+  }
+  .content-block-container__header {
+    font-size: 25px;
+    margin-top: 20px;
+    line-height: 16px;
+    letter-spacing: 1px;
+  }
+  .content-block-container__text {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 14px;
+  }
+
+  .third {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 77px;
+  }
+  .third__header {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .third__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  .third__btn {
+    display: flex;
+    justify-content: center;
+  }
+  .third__btn .btn {
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .third-content__block {
+    width: 225px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .third-content__block__container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .third-content__block__text {
+    text-align: center;
+  }
+  .third-content__block__text .third-name {
+    font-family: "bold";
+    font-size: 14px;
+    margin-bottom: 19px;
+  }
+  .third-content__block__text .third-about {
+    font-family: "light";
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .fourth {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 80px;
+  }
+  .fourth__header {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .fourth-container__block {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  .fourth-container__block .fourth-img {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fourth-container__block .fourth-imgOne {
+    width: 236px;
+    height: 310px;
+    background-image: url(../imgs/Sport1.png);
+  }
+  .fourth-container__block .fourth-imgTwo {
+    width: 236px;
+    height: 310px;
+    background-image: url(../imgs/Healath1.png);
+  }
+  .fourth-container__block .fourth-imgThree {
+    width: 236px;
+    height: 310px;
+    background-image: url(../imgs/Extreme1.png);
+  }
+  .fourth-container__block .fourth-imgFour {
+    width: 236px;
+    height: 310px;
+    background-image: url(../imgs/Games1.png);
+  }
+  .fourth-container__block .fourth-imgFive {
+    width: 492px;
+    height: 310px;
+    background-image: url(../imgs/Culture1.png);
+  }
+  .fourth-container__block .fourth-imgSix {
+    width: 492px;
+    height: 310px;
+    background-image: url(../imgs/CultureCopy1.png);
+  }
+  .fourth-container__block .fourth-imgSeven {
+    width: 236px;
+    height: 310px;
+    background-image: url(../imgs/GamesCopy1.png);
+  }
+
+  .fifts__header {
+    font-family: "bold";
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer__logo .logo-header {
+    color: #CCCCCC;
+    font-size: 10px;
+    font-family: "bold";
+    text-align: end;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
+
+  .first {
+    width: 100%;
+    height: 540px;
+    background-position: 50% 0;
+  }
+
+  .first-header {
+    padding-top: 40px;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 200px;
+  }
+  .first-header__logo {
+    font-size: 20px;
+  }
+  .first-header__btn {
+    margin-right: 0px;
+  }
+
+  .first-main {
+    width: 320px;
+    height: 300px;
+    margin-top: 0;
+  }
+  .first-main__header {
+    font-size: 26px;
+    margin-bottom: 23px;
+  }
+  .first-main__text {
+    font-size: 16px;
+  }
+  .first-main__find-btn {
+    width: 280px;
+    height: 40px;
+  }
+
+  .second {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+  }
+  .second__header {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .second__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-block {
+    width: 300px;
+    height: 240px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .content-block-container {
+    position: absolute;
+    bottom: 20px;
+  }
+  .content-block-container__header {
+    font-size: 25px;
+    margin-top: 20px;
+    line-height: 16px;
+    letter-spacing: 1px;
+  }
+  .content-block-container__text {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 14px;
+  }
+
+  .content-blockOne {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .content-blockTwo {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .third {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+  }
+  .third__header {
+    margin-bottom: 20px;
+  }
+  .third__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .third__btn .btn {
+    width: 280px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .third-content__block {
+    width: 225px;
+    height: 205px;
+    margin-bottom: 10px;
+  }
+  .third-content__block__container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  .third-content__block__text {
+    text-align: center;
+  }
+  .third-content__block__text .third-name {
+    font-family: "bold";
+    font-size: 14px;
+    margin-bottom: 19px;
+  }
+  .third-content__block__text .third-about {
+    font-family: "light";
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .division {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .fourth {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+  }
+  .fourth__header {
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .fourth-container__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .fourth-container__block .fourth-img {
+    width: 300px;
+    height: 120px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .fourth-container__block .fourth-imgOne {
+    background-image: url(../imgs/Sport2.png);
+  }
+  .fourth-container__block .fourth-imgTwo {
+    background-image: url(../imgs/Healath2.png);
+  }
+  .fourth-container__block .fourth-imgThree {
+    background-image: url(../imgs/Extreme3.png);
+  }
+  .fourth-container__block .fourth-imgFour {
+    background-image: url(../imgs/Games2.png);
+  }
+  .fourth-container__block .fourth-imgFive {
+    background-image: url(../imgs/Culture2.png);
+  }
+  .fourth-container__block .fourth-imgSix {
+    background-image: url(../imgs/CultureCopy2.png);
+  }
+  .fourth-container__block .fourth-imgSeven {
+    background-image: url(../imgs/GamesCopy2.png);
+  }
+
+  .fifts {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+  }
+  .fifts__header {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .fifts__text {
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .fifts__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fifts__form .fifts-inpt {
+    width: 280px;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+  .fifts__form .fifts-btn {
+    width: 280px;
+    height: 40px;
+    color: white;
+    background-color: #FF4E50;
+    border: none;
+    border-radius: 20px;
+    font-family: "bold";
+    font-size: 14px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__header {
+    margin-bottom: 10px;
+  }
+
+  .company-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .company-second {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .company-element {
+    margin-left: 10px;
+  }
+
+  .footer__company .company-header {
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .footer__logo .logo-header {
+    text-align: center;
+  }
+
+  .footer__partners {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  hr {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=task.css.map */

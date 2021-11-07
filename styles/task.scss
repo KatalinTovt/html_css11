@@ -1,0 +1,849 @@
+@import  '../styles/mixins';
+@import '../styles/variables';
+@import '../styles/fonts.css';
+body{
+  margin: 0;
+}
+.first{
+  @include box(100%, 700px);
+  padding-left: 250px;
+  padding-right: 250px;
+  background-image: url(../imgs/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.first-header{
+  display: flex;
+  padding-top: 40px;
+  align-items: center;
+  justify-content: space-between;
+&__logo{
+  font-family: 'bold';
+  color: white;
+  font-size: 20px;
+}
+&__btn{
+  margin-right: 40px;
+}
+}
+
+.btn__logIn{
+  border: none;
+  background: none;
+  font-family: 'light';
+  color: white;
+  font-size: 13px;
+
+  }
+.btn__signUp{
+@extend .btn__logIn;
+  border: 1px solid white;
+  border-radius: 20px;
+  @include box(90px, 36px);
+  margin-left: 13px;
+}
+.first-main{
+  @include box(470px, 350px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 94px;
+
+  &__header{
+color: white;
+font-family: 'bold';
+font-size: 46px;
+margin-bottom: 23px;
+letter-spacing: 4px;
+  }
+&__text{
+color: white;
+font-family: 'light';
+font-size: 20px;
+
+  }
+&__find-btn{
+  color: white;
+  font-family: 'light';
+  font-size: 14px;
+  background-color: $main-color;
+  @include box(225px, 40px);
+  border-radius: 20px;
+  border: none;
+  margin-top: 28px;
+}
+}
+
+.second{
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-top: 87px;
+  &__header{
+font-family: 'bold';
+font-size: 25px;
+text-align: center;
+margin-bottom: 30px;
+  }
+  &__content{
+    display: flex;
+  }
+}
+.content-block{
+ @include box(300px, 400px);
+ padding: 20px; 
+ position: relative;
+}
+
+ .content-block-container{
+  position: absolute;
+  bottom: 20px;
+ &__btn{
+   color: white;
+   background-color: #ff4e50b0;
+   letter-spacing: 2px;
+   font-size: 9px;
+   font-family: 'light';
+   border: none;
+   border-radius: 15px;
+   height: 20px;
+   width: 70px;
+}
+ &__header{
+color: white;
+font-family: 'bold';
+font-size: 25px;
+margin-top: 20px;
+line-height: 28px;
+letter-spacing: 1px;
+ }
+ &__text{
+   color: white;
+   font-family: 'light';
+   font-size: 14px;
+   margin-top: 20px;
+   line-height: 14px;
+}
+}
+.content-blockOne{
+background-image: url(../imgs/Step1image.png);
+margin-right: 20px;
+}
+.content-blockTwo{
+background-image: url(../imgs/Step2image.png);
+margin-right: 20px;
+}
+.content-blockThree{
+background-image: url(../imgs/Step3image.png);
+}
+
+
+
+.third{
+  padding-left: 250px;
+  padding-right: 250px;
+  margin-top: 87px;
+  &__header{
+    font-family: 'bold';
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+  }
+  &__btn{
+    display: flex;
+    justify-content: center;
+    .btn{
+    @include box(180px, 40px);
+    color:$main-color;
+    background-color: white;
+    border: 1px solid $main-color;
+    border-radius: 20px;
+    font-family: 'bold';
+    font-size: 14px;
+    }
+  }
+}
+.third-content__block{
+  @include box(225px, 205px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+&__container{
+  @include box(120px, 120px);
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 15px;
+}
+&__containerOne{
+  background-image: url(../imgs/Bitmap1.png);
+}
+&__containerTwo{
+  background-image: url(../imgs/Bitmap2.png);
+}
+&__containerThree{
+  background-image: url(../imgs/Bitmap3.png);
+}
+&__containerFour{
+  background-image: url(../imgs/Bitmap4.png);
+}
+
+&__text{
+  text-align: center;
+.third-name{
+font-family: 'bold';
+font-size: 14px;
+margin-bottom: 19px;
+}
+.third-about{
+  font-family: 'light';
+  font-size: 13px;
+  line-height: 14px;
+ 
+}
+}
+}
+
+.division{
+  display: flex;
+
+}
+.container-mini{
+  @include box(32px, 32px);
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  
+}
+.container-miniOne{
+  background-color: #FF4E55;
+}
+.container-miniTwo{
+  background-color: #19D4CA;
+}
+.container-miniThree{
+  background-color: #FFA710;
+}
+.container-miniFour{
+  background-color: #667DF3;
+}
+ .fourth{
+  padding-left: 230px;
+  padding-right: 230px;
+  margin-top: 87px;
+    &__header{
+      font-family: 'bold';
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+ }
+ .fourth-container{
+    &__block{
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+       .fourth-img{
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 2px;
+        color: white;
+        font-family: 'bold';
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .fourth-imgOne{
+        @include box(300px, 310px);
+        background-image:url(../imgs/Sport1.png); 
+       }
+       .fourth-imgTwo{
+        @include box(300px, 310px);
+        background-image: url(../imgs/Healath1.png)
+       }
+       .fourth-imgThree{
+        @include box(300px, 310px);
+        background-image: url(../imgs/Extreme1.png);
+       }
+       .fourth-imgFour{
+        @include box(300px, 310px);
+        background-image: url(../imgs/Games1.png)
+       }
+       .fourth-imgFive{
+        @include box(620px, 310px);
+        background-image: url(../imgs/Culture1.png)
+       }
+       .fourth-imgSix{
+        @include box(620px, 310px);
+        background-image: url(../imgs/CultureCopy1.png)
+       }
+       .fourth-imgSeven{
+        @include box(300px, 310px);
+        background-image: url(../imgs/GamesCopy1.png)
+       }
+
+    }
+ }
+
+.fifts{
+  padding-left: 230px;
+  padding-right: 230px;
+  margin-top: 87px;
+  &__header{
+    font-family: 'bold';
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__text{
+    font-family: 'light';
+    font-size: 18px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  &__form{
+    display: flex;
+    justify-content: center;
+    .fifts-inpt{
+      @include box(299px, 40px);
+      border: 1px solid #D4D4D4;
+      padding-left: 10px;
+      margin-right: 10px;
+
+
+    }
+    .fifts-btn{
+      @include box(172px, 40px);
+      color:white;
+      background-color: $main-color;
+      border: none;
+      border-radius: 20px;
+      font-family: 'bold';
+      font-size: 14px;
+      margin-bottom: 80px;
+    }
+  }
+}
+ hr{
+  border: 1px solid $main-color;
+  margin-bottom: 38px;
+ }
+
+
+
+.footer{
+  padding-left: 176px;
+  padding-right: 191px;
+  display: flex;
+  justify-content: space-around;
+  &__header{
+    font-family: 'light';
+    font-size: 16px;
+    color: $main-color;
+  }
+  &__company{
+    .company-header{
+      font-family: 'bold';
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .company-first{
+      .company-element{
+        color: #999999;
+        font-family: 'light';
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+    .company-second{
+      .company-element{
+        color: #999999;
+        font-family: 'light';
+        font-size: 14px;
+        margin-top: 5px;
+      }
+    }
+  }
+  &__partners{
+    .partners-header{
+      font-family: 'bold';
+      font-size: 14px;
+    }
+  }
+  &__logo{
+     .logo-header{
+        color: #CCCCCC;
+        font-size: 10px;
+        font-family: 'bold';
+        text-align: end;
+     }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  body{
+    min-width: fit-content;
+  }
+  .first{
+    @include box(100%, 700px);
+    padding-left: 30px;
+    padding-right: 30px;
+    background-position: 50% 0;
+  }
+  .second{
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &__header{
+  font-size: 22px;
+  margin-bottom: 28px;
+    }
+    &__content{
+      justify-content: center;
+    }
+  }
+  .content-block{
+   @include box(236px, 400px);
+   padding: 20px; 
+   position: relative;
+  }
+  
+   .content-block-container{
+   &__btn{
+     font-size: 9px;
+     height: 20px;
+     width: 70px;
+  }
+   &__header{
+  font-size: 25px;
+  margin-top: 20px;
+  line-height: 16px;
+  letter-spacing: 1px;
+   }
+   &__text{
+     font-size: 14px;
+     margin-top: 20px;
+     line-height: 14px;
+  }
+  }
+
+.third{
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 77px;
+  &__header{
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+
+  }
+  &__btn{
+    display: flex;
+    justify-content: center;
+    .btn{
+    @include box(180px, 40px);
+    font-size: 14px;
+    }
+   
+  }
+}
+.third-content__block{
+  @include box(225px, 205px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+&__container{
+  @include box(120px, 120px);
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 15px;
+}
+&__text{
+  text-align: center;
+.third-name{
+font-family: 'bold';
+font-size: 14px;
+margin-bottom: 19px;
+}
+.third-about{
+  font-family: 'light';
+  font-size: 13px;
+  line-height: 14px;
+ 
+}
+}
+}
+
+
+
+.fourth{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 80px;
+    &__header{
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+ }
+ .fourth-container{
+    &__block{
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+       .fourth-img{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .fourth-imgOne{
+        @include box(236px, 310px);
+        background-image:url(../imgs/Sport1.png); 
+       }
+       .fourth-imgTwo{
+        @include box(236px, 310px);
+        background-image: url(../imgs/Healath1.png)
+       }
+       .fourth-imgThree{
+        @include box(236px, 310px);
+        background-image: url(../imgs/Extreme1.png);
+       }
+       .fourth-imgFour{
+        @include box(236px, 310px);
+        background-image: url(../imgs/Games1.png)
+       }
+       .fourth-imgFive{
+        @include box(492px, 310px);
+        background-image: url(../imgs/Culture1.png)
+       }
+       .fourth-imgSix{
+        @include box(492px, 310px);
+        background-image: url(../imgs/CultureCopy1.png)
+       }
+       .fourth-imgSeven{
+        @include box(236px, 310px);
+        background-image: url(../imgs/GamesCopy1.png)
+       }
+
+    }
+ }
+ .fifts__header{
+  font-family: 'bold';
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.footer{
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+ 
+  &__logo{
+     .logo-header{
+        color: #CCCCCC;
+        font-size: 10px;
+        font-family: 'bold';
+        text-align: end;
+     }
+  }
+}
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 320px) {
+  body{
+    min-width: fit-content;
+  }
+  .first{
+    @include box(100%, 540px);
+    background-position: 50% 0;
+  }
+  .first-header{
+    padding-top: 40px;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 200px;
+  &__logo{
+    font-size: 20px;
+  }
+  &__btn{
+    margin-right: 0px;
+  }
+  }
+  .first-main{
+    @include box(320px, 300px);
+    margin-top: 0;
+  
+    &__header{
+  font-size: 26px;
+  margin-bottom: 23px;
+    }
+  &__text{
+  
+  font-size: 16px;
+  
+    }
+  &__find-btn{
+    @include box(280px, 40px);
+    
+  }
+  }
+
+  .second{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    &__header{
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+    }
+    &__content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .content-block{
+   @include box(300px, 240px);
+   padding: 20px; 
+   position: relative;
+  }
+  
+   .content-block-container{
+    position: absolute;
+    bottom: 20px;
+
+   &__header{
+  font-size: 25px;
+  margin-top: 20px;
+  line-height: 16px;
+  letter-spacing: 1px;
+   }
+   &__text{
+     font-size: 14px;
+     margin-top: 20px;
+     line-height: 14px;
+  }
+  }
+  .content-blockOne{
+  margin-bottom: 10px;
+  margin-right:  0;
+  }
+  .content-blockTwo{
+  margin-bottom: 10px;
+  margin-right:  0;
+  }
+ 
+  
+
+
+  .third{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    &__header{
+      margin-bottom: 20px;
+    }
+    &__content{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+  
+    }
+    &__btn{
+      .btn{
+      @include box(280px, 40px);
+      font-size: 14px;
+      }
+    }
+  }
+  .third-content__block{
+    @include box(225px, 205px);
+    margin-bottom: 10px;
+  &__container{
+    @include box(120px, 120px);
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  &__text{
+    text-align: center;
+  .third-name{
+  font-family: 'bold';
+  font-size: 14px;
+  margin-bottom: 19px;
+  }
+  .third-about{
+    font-family: 'light';
+    font-size: 13px;
+    line-height: 14px;
+   
+  }
+  }
+  }
+  .division{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+  .fourth{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+      &__header{
+        font-size: 22px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+   }
+   .fourth-container{
+      &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+         .fourth-img{
+          @include box(300px, 120px);
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 15px;
+         }
+         .fourth-imgOne{
+          background-image:url(../imgs/Sport2.png); 
+         }
+         .fourth-imgTwo{
+          background-image: url(../imgs/Healath2.png)
+         }
+         .fourth-imgThree{
+          background-image: url(../imgs/Extreme3.png);
+         }
+         .fourth-imgFour{
+          background-image: url(../imgs/Games2.png)
+         }
+         .fourth-imgFive{
+          background-image: url(../imgs/Culture2.png)
+         }
+         .fourth-imgSix{
+          background-image: url(../imgs/CultureCopy2.png)
+         }
+         .fourth-imgSeven{
+          background-image: url(../imgs/GamesCopy2.png)
+         }
+  
+      }
+   }
+
+
+   .fifts{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    &__header{
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    &__text{
+      letter-spacing: -1px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .fifts-inpt{
+        @include box(280px, 40px);
+        padding-left: 10px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+
+
+  
+      }
+      .fifts-btn{
+        @include box(280px, 40px);
+        color:white;
+        background-color: $main-color;
+        border: none;
+        border-radius: 20px;
+        font-family: 'bold';
+        font-size: 14px;
+      }
+    }
+  }
+  
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__header{
+  margin-bottom: 10px;
+}
+.company-first{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.company-second{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.company-element{
+  margin-left: 10px;
+}
+.footer__company .company-header{
+  margin-bottom: 0px;
+  text-align: center;
+  
+}
+.footer__logo .logo-header {
+  text-align: center;
+}
+.footer__partners{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+hr{
+  margin-bottom: 20px;
+}
+
+}
